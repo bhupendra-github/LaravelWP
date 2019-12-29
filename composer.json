@@ -4,11 +4,11 @@
     "description": "Integrate Wordpress and Laravel",
     "keywords": ["Wordpress","Laravel","Integrate"],
     "homepage": "https://github.com/bhupendra-github/wp-laravel-integrate",
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Bhupendra",
-            "email": "",
+            "email": "secret@mail.com",
             "homepage": "https://github.com/bhupendra-github/wp-laravel-integrate",
             "role": "Developer"
         }
