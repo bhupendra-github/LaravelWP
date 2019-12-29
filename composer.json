@@ -1,15 +1,15 @@
 {
-    "name": "Integrate/wp-laravel-integrate",
+    "name": "integrate/wp-laravel-integrate",
     "type": "library",
     "description": "Integrate Wordpress and Laravel",
     "keywords": ["Wordpress","Laravel","Integrate"],
-    "homepage": "https://github.com/bhupendrachakradhar/wp-laravel-integrate",
+    "homepage": "https://github.com/bhupendra-github/wp-laravel-integrate",
     "license": "GPLv3",
     "authors": [
         {
             "name": "Bhupendra",
             "email": "",
-            "homepage": "https://github.com/bhupendrachakradhar/wp-laravel-integrate",
+            "homepage": "https://github.com/bhupendra-github/wp-laravel-integrate",
             "role": "Developer"
         }
     ]
