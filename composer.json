@@ -12,5 +12,8 @@
             "homepage": "https://github.com/bhupendra-github/LaravelWP",
             "role": "Developer"
         }
-    ]
+    ],
+     "autoload": {
+        "files": ["auth-check.php"]
+    }
 }
