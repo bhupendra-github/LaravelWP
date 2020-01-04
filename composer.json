@@ -1,5 +1,5 @@
 {
-    "name": "integrate/LaravelWP",
+    "name": "integrate/laravelwp",
     "type": "library",
     "description": "Integrate Wordpress and Laravel",
     "keywords": ["Wordpress","Laravel","Integrate"],
