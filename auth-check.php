@@ -42,8 +42,8 @@ function wp_validate_auth_cookie( $prefix='wp_',$meta_key = '_wp_php_auth_cookie
 function get_user_by_name($connection,$prefix,$meta_key,$cookie) {
     $sql_query= "select user_id from ".$prefix."usermeta where meta_key='".$meta_key."' and meta_value='".$cookie."'";
     $user_id=DB::connection($connection)->select($sql_query);
+    if($user_id){
     $uid=$user_id[0]->user_id;
-    if($uid){
     $sql_query2= "select meta_value from ".$prefix."usermeta where user_id=$uid and meta_key='wp_capabilities'";
     $user_capabilities_serialize=DB::connection($connection)->select($sql_query2);
     $user_capabilities_unserialize=unserialize($user_capabilities_serialize[0]->meta_value);
