@@ -50,7 +50,10 @@ function get_user_by_name($connection,$prefix,$meta_key,$cookie) {
     $sql_query3= "select user_email from ".$prefix."users where id=$uid";
     $user_details=DB::connection($connection)->select($sql_query3);
     $user['id']=$user_id[0]->user_id;
-    $user['is_admin']=$user_capabilities_unserialize['administrator'];
+    if(isset($user_capabilities_unserialize['administrator']))
+        $user['is_admin']=$user_capabilities_unserialize['administrator'];
+    else
+        $user['is_admin']=false;
     $user['user_email']=$user_details[0]->user_email;
     return $user;
     }
