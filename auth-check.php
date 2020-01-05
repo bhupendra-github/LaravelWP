@@ -15,7 +15,7 @@ function wp_parse_auth_cookie( $cookie ) {
     return compact( 'username', 'expiration', 'token', 'hmac' );
 }
 
-function wp_validate_auth_cookie( $prefix='wp_',$meta_key = '_wp_php_auth_cookie', $cookie = '' ) {
+function wp_validate_auth_cookie( $connection , $prefix='wp_',$meta_key = '_wp_php_auth_cookie', $cookie = '' ) {
     $cookie_elements = wp_parse_auth_cookie( $cookie );
     if ( ! $cookie_elements ) {
         return false;
@@ -35,7 +35,7 @@ function wp_validate_auth_cookie( $prefix='wp_',$meta_key = '_wp_php_auth_cookie
     if ( $expired < time() ) {
         return false;
     }
-    $connection='wpdb';//change this once testing is over
+    //$connection='wpdb';//change this once testing is over
     $user = get_user_by_name($connection,$prefix,$meta_key, $cookie );
     return $user;
 }
